@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background-color: #101728;
+  color: white;
+  font-size: 16px;
+}
+nav {
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #101728;
+}
+
+h1 {
+  text-align: center;
+  color: #ff3c5f;
+  font-size: xx-large;
+  font-family: "Press Start 2P", cursive;
+}
+
+section {
+  margin: 1.5rem;
+  padding: 35px 25px;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* background-color: #260e69; */
+  box-shadow: 0px 0px 30px #9340ff;
+}
+section svg {
+  position: absolute;
+  width: 40px;
+  top: -10px;
+  right: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
+li {
+  padding: 5px 15px;
+  /* background-color: #ffbe0b; */
+  background-color: #9340ff;
+  color: #101728;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.question {
+  font-size: 1.5rem;
+}
+.answer {
+  font-size: 1.3rem;
+  font-style: italic;
+  text-decoration: underline #ff3c5f;
+}
+
+.answer-button {
+  height: 2.5rem;
+  width: 16rem;
+  border-radius: 25px;
+  background-color: #ff3c5f;
+  font-size: medium;
+  font-family: "Press Start 2P", cursive;
+}
+
+svg {
+  color: #9340ff;
+  width: 40px;
+}
+
+.navigation-icons :hover {
+  box-shadow: 0px 0px 30px #ff3c5f;
+}
