@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,500&display=swap");
 
 * {
   box-sizing: border-box;
@@ -47,22 +48,23 @@ h1 {
 section {
   margin: 1.5rem;
   padding: 35px 25px;
+  display: flex;
+}
+section[class$="card"] {
   border-radius: 15px;
   position: relative;
-  display: flex;
   flex-direction: column;
-  gap: 20px;
-  /* background-color: #260e69; */
+  gap: 2rem;
   box-shadow: 0px 0px 30px #9340ff;
 }
-section svg {
+section[class$="card"] svg {
   position: absolute;
   width: 40px;
   top: -10px;
   right: 10px;
 }
 
-ul {
+.hashtags {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -70,7 +72,7 @@ ul {
   justify-content: flex-start;
   gap: 10px;
 }
-li {
+.hashtags li {
   padding: 5px 15px;
   /* background-color: #ffbe0b; */
   background-color: #9340ff;
@@ -112,3 +114,88 @@ path:hover,
 g:hover {
   fill: #9340ff;
 }
+
+/* PROFILE */
+
+.profile {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 2.5rem;
+}
+.name-pic {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 2rem;
+}
+.name-pic img {
+  border-radius: 1rem;
+  box-shadow: 0px 0px 30px #ff3c5f;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.counters {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  gap: 1rem;
+}
+.counter {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.5rem;
+  width: 40%;
+  padding: 0.3rem;
+  background-color: #9340ff;
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.counter svg {
+  color: #000;
+  width: 2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+h3:hover {
+  font-style: italic;
+  color: #ff3c5f;
+}
+h4 {
+  font-size: 1.5rem;
+}
+p {
+  font-weight: 300;
+}
+
+.settings ul {
+  list-style: none;
+  font-size: 1.3rem;
+  width: 100%;
+}
+.dark-mode {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+/* END PROFILE */
