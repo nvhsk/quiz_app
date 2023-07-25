@@ -1,6 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,500&display=swap"); */
+
+@font-face {
+  font-family: "Press Start";
+  src: url(src/fonts/PressStart2P-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(src/fonts/RobotoMono-VariableFont_wght.ttf) format(truetype);
+  src: url(src/fonts/RobotoMono-Italic-VariableFont_wght.ttf) format(truetype);
+}
 
 * {
   box-sizing: border-box;
@@ -9,17 +19,16 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   font-weight: 500;
   background-color: #101728;
   color: white;
   font-size: 16px;
-  /* cursor: url("./ghost.png"), auto; */
 }
 nav {
   margin: 0;
-  padding-bottom: 10px;
-  padding-top: 30px;
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
   position: sticky;
   top: 0;
   width: 100%;
@@ -30,7 +39,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 15px;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -42,26 +51,26 @@ h1 {
   text-align: center;
   color: #ff3c5f;
   font-size: xx-large;
-  font-family: "Press Start 2P", cursive;
+  font-family: "Press Start", fallback, sans-serif;
 }
 
 section {
   margin: 1.5rem;
-  padding: 35px 25px;
+  padding: 2rem 1.5rem;
   display: flex;
 }
 section[class$="card"] {
-  border-radius: 15px;
+  border-radius: 1rem;
   position: relative;
   flex-direction: column;
   gap: 2rem;
-  box-shadow: 0px 0px 30px #9340ff;
+  box-shadow: 0rem 0rem 1.7rem #9340ff;
 }
 section[class$="card"] svg {
   position: absolute;
-  width: 40px;
-  top: -10px;
-  right: 10px;
+  width: 2.5rem;
+  top: -0.6rem;
+  right: 1rem;
 }
 
 .hashtags {
@@ -70,14 +79,14 @@ section[class$="card"] svg {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 0.6rem;
 }
 .hashtags li {
-  padding: 5px 15px;
+  padding: 0.3rem 1rem;
   /* background-color: #ffbe0b; */
   background-color: #9340ff;
   color: #101728;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   font-size: 0.8rem;
   font-weight: 500;
 }
@@ -95,20 +104,20 @@ section[class$="card"] svg {
   height: 2.5rem;
   width: 16rem, auto;
   border: none;
-  border-radius: 25px;
+  border-radius: 1.5rem;
   background-color: #ff3c5f;
   font-size: medium;
   font-family: "Press Start 2P", cursive;
   cursor: pointer;
 }
 .answer-button:hover {
-  box-shadow: 0px 0px 15px #ff3c5f;
+  box-shadow: 0rem 0rem 1rem #ff3c5f;
   color: white;
 }
 
 svg {
   color: #9340ff;
-  width: 40px;
+  width: 2.5rem;
 }
 path:hover,
 g:hover {
@@ -132,7 +141,7 @@ g:hover {
 }
 .name-pic img {
   border-radius: 1rem;
-  box-shadow: 0px 0px 30px #ff3c5f;
+  box-shadow: 0rem 0rem 2rem #ff3c5f;
 }
 
 .about {
