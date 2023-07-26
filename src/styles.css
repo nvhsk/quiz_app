@@ -1,16 +1,16 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,500&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,500&display=swap");
 
-@font-face {
+/* @font-face {
   font-family: "Press Start";
-  src: url(src/fonts/PressStart2P-Regular.ttf) format(truetype);
+  src: url("src/fonts/PressStart2P-Regular.ttf") format(truetype);
 }
 @font-face {
   font-family: "Roboto Mono";
-  src: url(src/fonts/RobotoMono-VariableFont_wght.ttf) format(truetype);
-  src: url(src/fonts/RobotoMono-Italic-VariableFont_wght.ttf) format(truetype);
-}
+  src: url("src/fonts/RobotoMono-VariableFont_wght.ttf") format(truetype);
+  src: url("src/fonts/RobotoMono-Italic-VariableFont_wght.ttf") format(truetype);
+} */
 
 * {
   box-sizing: border-box;
@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: "Roboto Mono", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   background-color: #101728;
   color: white;
@@ -51,7 +51,7 @@ h1 {
   text-align: center;
   color: #ff3c5f;
   font-size: xx-large;
-  font-family: "Press Start", fallback, sans-serif;
+  font-family: "Press Start 2P", cursive;
 }
 
 section {
