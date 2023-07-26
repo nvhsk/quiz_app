@@ -114,9 +114,9 @@ section[class$="card"] svg {
   box-shadow: 0rem 0rem 1rem #ff3c5f;
   color: white;
 }
-/* .invisible {
+.invisible {
   display: none;
-} */
+}
 
 svg {
   color: #9340ff;
